@@ -176,7 +176,7 @@ public class ImageManipulation {
         int x = 0;
         int y = 0;
         for(int i=height-1;i>0;i--){
-            for (int j=width-1;j>0;j--){
+            for (int j=width;j>=0;j--){
                 Pixel pixel = image.getPixel(x,y);
                 flipped.setPixel(i,j,pixel);
                 x++;
